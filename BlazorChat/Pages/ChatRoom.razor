@@ -48,7 +48,7 @@ else
         }
         <hr />
         <textarea class="input-lg" placeholder="enter your comment" @bind="@_newMessage"></textarea>
-        <button class="btn btn-default" @onclick="@(() => SendAsync(_newMessage))">Send</button>
+        <button class="btn btn-outline-dark" @onclick="@(() => SendAsync(_newMessage))">Send</button>
         <select class="form-select" @bind="@_to">
             <option value="All">All</option>
             @foreach (var user in userService.GetAll())
